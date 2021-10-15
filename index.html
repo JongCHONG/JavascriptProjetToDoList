@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <title>Todolist</title>
+</head>
+<body>
+    <div id="nom-tableau">
+        Todolist
+    </div>
+    <div class="container">
+        <div id="formulaire">
+            <form class="format"  onsubmit="onTaskSubmit(); return false;">    
+                <input type="text" id="tache" name="" placeholder="Ajoutez votre tâche ici !">
+                <input type="number" id="priority" name="" min="0" max="5">
+                <SELECT id="liste-deroulante" NAME="Liste" >
+                    <OPTION VALUE="">Vide
+                    <OPTION VALUE="To do">To do
+                    <OPTION VALUE="Done">Done
+                    <OPTION VALUE="Doing">Doing
+                </SELECT>
+                <button class="btnAjouter">Ajouter</button>
+            </form>   
+        </div>
+        <div class="filtre">
+            <button class="btn" onclick="filterAll()">All</button>
+            <button class="btn" onclick="filterTache('To do')">To Do</button>
+            <button class="btn" onclick="filterTache('Doing')">Doing</button>
+            <button class="btn" onclick="filterTache('Done')">Done</button>
+            <button class="btn" onclick="Trier('max')">Trier +</button>
+            <button class="btn" onclick="Trier('min')">Trier -</button>
+            <button class="btnRandom" onclick="addTaskRandom()" >Random</button>
+        </div>
+        <div id="list-taches"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

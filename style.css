@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+body{
+    font-family: 'Architects Daughter', cursive;
+    margin: 0;
+    color :#1E0F1C;
+    background-color: #955149;
+}
+#nom-tableau{
+    background-color: #A7001E;
+    padding: 20px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.container {
+    width: 996px;
+    margin: auto;
+    padding: 10px;
+}
+.format{
+    display: flex;
+    justify-content:center;
+    margin: 20px;
+}
+.btnRandom {
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 30px;
+    background-color: #7AA95C;
+    border: none;
+    padding: 0px 30px;
+    color: white;
+    font-size: 24px;;
+}
+.btnAjouter{
+    font-family: 'Architects Daughter', cursive;
+    border-radius: 30px;
+    background-color: #A7001E;
+    border: none;
+    padding: 0px 30px;
+    color: white;
+    font-size: 24px;
+}
+.btn{
+    background-color: #A7001E;
+    border-radius: 13px;
+    border: none;
+    margin: 10px 10px;
+    padding: 7px;
+    width: 100px;
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+}
+.starplus:hover{
+    /* background-image: url('img/star-solid.svg') */
+}
+.starplus, .starmoins{
+    color: white;
+}
+.starmoins:hover{
+    /* background-image: url('img/star-regular.svg'); */
+}
+.filtre {
+    text-align: center;
+}
+.task-element  {
+    display:flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+#list-taches {
+    color: white;
+}
+.tachecss{
+    width: 50%;
+}
+input#tache {
+    padding: 8px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 30%;
+    margin: 0 10px;
+}
+#priority, #liste-deroulante {
+    margin: 0 10px;
+}
+.priority {
+    width: 120px;
+}
